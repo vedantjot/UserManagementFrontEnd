@@ -1,0 +1,16 @@
+
+
+
+ <div class="container" style="max-width: 300px; border: 1px solid grey; margin-top: 200px; padding: 10px;">
+<form  #userForm="ngForm" (ngSubmit)="login(userForm.value)">
+  <input type="email" class="form-control" placeholder="Email"  ngModel name="Email">
+  <br>
+  <input type="email" class="form-control" placeholder="Password"  ngModel name="Password">
+  <br>
+  <button  class="btn btn-primary" style="width: 280px;">Login</button>
+  <br>
+
+  <a routerLink="/signup" routerLinkActive="active">Register Here</a>
+
+</form>
+</div> 
