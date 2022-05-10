@@ -26,7 +26,7 @@ export class SignupComponent implements OnInit {
       (res)=>    
       { 
        this.response=res;
-        console.warn(this.response.status+" "+this.response.message+" "+this.response.user)  
+        console.warn(this.response.status+" "+this.response.message+" "+this.response.user.iD)  
       if(this.response.status="Valid")
       {
         this.router.navigate(['/login']); 
